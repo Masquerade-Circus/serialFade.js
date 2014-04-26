@@ -1,4 +1,4 @@
-simpleAccordion.js
+serialFade.js
 =================
 
 Small 421 bytes jQuery Plugin for create a serial fade effect.
