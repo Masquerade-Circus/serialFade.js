@@ -9,7 +9,7 @@ http://masquerade-circus.creaken.com/Plugins/serialFade/
 ##How to use:
 Call the plugin on the set of elements to add the effect. 
 				
-##Options Min and Lite versions:
+##Options:
 ```javascript
 	$(selector).serialFade(options);
 	$('elem').simpleSlide({time: 900, delay: 300, level: 0, each: function, end: function});
