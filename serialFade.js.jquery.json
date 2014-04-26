@@ -1,0 +1,32 @@
+{
+  "name": "serialFade.js",
+  "title": "serialFade",
+  "description": "Small 421 bytes jQuery Plugin for create a serial fade effect.",
+  "keywords": [
+    "interface",
+	"ui",
+    "effect",
+    "content",
+    "layout",
+	"animate",
+	"fade",
+	"transitions"
+    ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Masquerade Circus",
+    "url": "http://masquerade-circus.creaken.com"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }, {
+    "type": "GPLv2",
+    "url": "http://opensource.org/licenses/GPL-2.0"
+  }],
+  "homepage": "https://github.com/Masquerade-Circus/serialFade.js",
+  "demo": "http://masquerade-circus.creaken.com/Plugins/serialFade/",
+  "dependencies": {
+    "jquery": ">=1.4.x"
+  }
+}

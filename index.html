@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			body,div,ul,li, img, a {margin:0; padding:0; outline: 0; text-decoration: none;}
+			a{color: cornflowerblue;}
+			a:hover{color: cadetblue;}
+			a.download{text-decoration:underline;}
+			html,body{height: 100%;}
+			body{font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; margin: 0 auto; padding: 2%;}
+			.description{font-size: 1.4em; display: block; text-align: center;}
+			.tc{text-align: center}
+			.texto{padding: 10px;margin-bottom: 5px;}
+			.gray{color: #666;font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+			.container{border: 1em; padding: 2em; margin: 2em; text-align: center;}
+			.btn{width: 30%; margin: 0 0 0 20px; padding: 0.5em 2.5em; display: inline-block; background: #ccc; cursor:pointer;}
+			.btn:hover{background: green; color: #fff}
+			.code{background: #0A0704; color: #ccc; padding: 1em; margin: 1em 2em;font-family: Monaco, Consolas, "Lucida Console", monospace;}
+			img{width: 100%; height: auto;}
+			.button{margin: 0.5em; padding: 0.5em 1.5em; background: #ccc; color: #000; float: left; cursor: pointer;}
+			.button:hover{background: #000; color: #ccc}
+			.active{background: green; color: #fff}
+			.reset:hover{background: red; color: #fff;}
+			.github{position: absolute; top:0; right: 0; display:block;}
+			.legal{position: fixed; bottom:0; right: 0; background: #fff; padding: 0.2em 1.5em; box-shadow: 0 0 0.3em; text-align: right;}
+			.clear{clear: both;}
+			
+			.tofade{width: 25%; position: relative; float: left;}
+			.tofade img{width: 100%; height: auto;}
+		 </style>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="serialFade.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var a = $('.tofade');
+				$('.button').on('click', function(){
+					a.serialFade({time: 900, delay: 300, end: function(){
+						a.serialFade({level: 1, end: function(){
+							a.serialFade({level: 0.5});
+						}});
+					}});
+				});
+			});
+		</script>
+	</head>
+<body>
+				<a href="http://github.com/Masquerade-Circus/serialFade.js" title="Fork me on Github" class="github" target="_blank"><img src="github.png" alt="Github" width="149" height="149"></a>
+				<h1 class="tc"><b>serialFade</b></h1>
+				<b class="description">
+					Small 421 bytes jQuery Plugin for create a serial fade effect.
+					<br><br><a href="https://github.com/Masquerade-Circus/serialFade.js/archive/master.zip" title="Download" class="download" target="_blank">Download</a>
+				</b>
+				
+				<br><br><h2>How to use: </h2>
+				Call the plugin on the set of elements to add the effect. 
+				
+				<br><br><h2>Options: </h2>
+				<div class="code">
+					$(selector).serialFade(options);
+					<br><br>$('elem').simpleSlide({time: 900, delay: 300, level: 0, each: function, end: function});
+				</div>
+				"Each" function will be called every time the fade effect ends in each element. 
+				
+				<br><br><h2>Example: </h2>
+				<div class="button">Play effect</div>
+				<br class="clear">
+				<div class="tofade"><img src="http://lorempixel.com/640/360/city" alt="#"></div>
+				<div class="tofade"><img src="http://lorempixel.com/640/360/fashion" alt="#"></div>
+				<div class="tofade"><img src="http://lorempixel.com/640/360/people" alt="#"></div>
+				<div class="tofade"><img src="http://lorempixel.com/640/360/cats" alt="#"></div>
+				
+				<br class="clear">
+				<br><br><h2>Legal: </h2>
+				Author & copyright (c) 2013: <a href="http://masquerade-circus.creaken.com" title="Masquerade Circus" target="_blank">Masquerade Circus</a>
+				<br>Dual <a href="http://opensource.org/licenses/MIT" title="MIT" target="_blank">MIT</a> & <a href="http://opensource.org/licenses/GPL-2.0" title="GPLv2" target="_blank">GPLv2</a> license
+				<br><br><br><br>
+</body>
+</html>
