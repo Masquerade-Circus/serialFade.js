@@ -4,7 +4,7 @@ serialFade.js
 Small 421 bytes jQuery Plugin for create a serial fade effect.
 
 ## Demo
-http://masquerade-circus.creaken.com/Plugins/serialFade/
+http://masquerade-circus.net/myPlugins/serialFade/
 
 ##How to use:
 Call the plugin on the set of elements to add the effect. 
@@ -16,5 +16,5 @@ Call the plugin on the set of elements to add the effect.
 ```
 
 # Legal
-Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.creaken.com)
+Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.net)
 Dual [MIT](http://opensource.org/licenses/MIT) & [GPLv2](http://opensource.org/licenses/GPL-2.0) license
